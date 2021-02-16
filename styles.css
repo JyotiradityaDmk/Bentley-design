@@ -6,7 +6,7 @@
 
 nav {
   position: relative;
-  top: 0px;
+  top: 2px;
   z-index: 3;
   display: flex;
   justify-content: space-around;
@@ -19,7 +19,7 @@ nav {
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Lexend Mega", sans-serif;
 }
 
@@ -38,7 +38,7 @@ nav {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .burger {
