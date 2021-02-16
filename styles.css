@@ -20,6 +20,7 @@ nav {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
+  font-family: "Lexend Mega", sans-serif;
 }
 
 .nav-links {
@@ -58,18 +59,18 @@ nav {
   width: 100%;
   position: relative;
   top: -120px;
-  background-size: 200vh;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .car p {
   color: white;
   position: relative;
-  top: 400px;
+  top: 425px;
   display: flex;
   justify-content: start;
   font-size: 70px;
-  margin-left: 300px;
+  margin-left: 150px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -92,6 +93,9 @@ nav {
   height: 35vh;
   width: 60vh;
   margin-bottom: 50px;
+}
+#about-1 {
+  font-family: "Poppins", sans-serif;
 }
 
 #about-2 p {
@@ -123,9 +127,54 @@ nav {
   letter-spacing: 1.5px;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  font-family: "Lexend Mega", sans-serif;
+}
+
+/* Responsive Query */
+@media (max-width: 1440px) {
+  body {
+    overflow-x: hidden;
+  }
+  .car {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: -120px;
+    background-position: center;
+  }
+  .container-fluid img {
+    height: 65vh;
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 70%;
+  }
+
+  .container-fluid img {
+    height: 60vh;
+    width: 80%;
+  }
+
+  .car p {
+    color: white;
+    position: relative;
+    top: 400px;
+    display: flex;
+    justify-content: start;
+    font-size: 60px;
+    margin-left: 120px;
+    font-family: "Poppins", sans-serif;
   }
 }
 
@@ -153,8 +202,124 @@ nav {
   .burger {
     display: block;
   }
+  .car p {
+    color: white;
+    position: relative;
+    top: 345px;
+    display: flex;
+    justify-content: start;
+    font-size: 45px;
+    margin-left: 100px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #about-img {
+    height: 25vh;
+    width: 60vh;
+    margin-bottom: 0px;
+  }
+
+  #about-2 a {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  #about-2 p {
+    font-size: 24px;
+  }
+
+  .container-fluid img {
+    height: 50vh;
+    width: 80%;
+  }
+  #perf {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .container {
+    color: black;
+    line-height: 100px;
+  }
 }
 
+@media (max-width: 425px) {
+  body {
+    overflow-x: hidden;
+  }
+  .car p {
+    top: 225px;
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+    margin-left: 35px;
+  }
+  .car {
+    background-image: url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1447&q=80);
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    top: -120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    color: black;
+    line-height: 15px;
+  }
+
+  #about-img {
+    height: 18vh;
+    width: 50vh;
+    margin-bottom: 0px;
+  }
+
+  #about-2 a {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 9px;
+    line-height: 0px;
+  }
+  #about-2 p {
+    font-size: 14px;
+  }
+
+  #perf {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+
+  #about-1 {
+    font-size: 10px;
+  }
+  #about-1 .col-6 h5 {
+    font-size: 11px;
+  }
+
+  .container-fluid img {
+    height: 30vh;
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 325px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Nav Animation */
 .nav-active {
   transform: translate(0%);
 }
